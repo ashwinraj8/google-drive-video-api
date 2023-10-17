@@ -9,7 +9,7 @@ Now, under Google Cloud, establish a service account for Gdrive to obtain the au
 Run the script node app.js in the console. This will launch the server.
 
 #Running API
-To use the API for downloading and uploading videos, launch any app that can contact the endpoint, such as postman. Then make a post request to this end point -> 'http://localhost:3000/download-and-upload/'. 
+To use the API for downloading and uploading videos, launch any app that can contact the endpoint, such as postman. Then make a post request to this end point -> 'http://localhost:3000/download-and-upload/'. Make sure user first provide the destination gdrive folder id in required places in the application.
 Then, in the nodejs console, check the download progress; it will indicate the percentage of data (chunks) being downloaded in realtime. Once the download is complete, 
 the upload will begin immediately and display the completion percentage of data (chunks) in the terminal. Once all of the events have been completed, 
 a response will be provided in the console as well as in Postman, with the 'File id' and Gdrive directory id.
